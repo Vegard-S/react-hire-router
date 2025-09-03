@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import PeopleListItem from './PeopleListItem'
 
 function PeopleList(props) {
@@ -6,7 +8,7 @@ function PeopleList(props) {
   return (
     <ul>
       {people.map((person, index) => (
-        <PeopleListItem key={index} person={person} />
+        <PeopleListItem key={index} person={person} id={index}/>
       ))}
     </ul>
   )
